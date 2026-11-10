@@ -1,0 +1,13 @@
+{
+  "name": "brand-motion-graphics-kit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.tsx --no-open",
+    "check": "tsc --noEmit",
+    "render": "remotion render src/index.tsx BrandEnding out/brand-ending.mp4 --props=brand.json",
+    "still": "remotion still src/index.tsx BrandEnding out/brand-ending.png --props=brand.json --frame=70"
+  },
+  "dependencies": {"remotion": "4.0.540", "@remotion/cli": "4.0.540", "react": "19.3.1", "react-dom": "19.3.1"},
+  "devDependencies": {"typescript": "5.9.3", "@types/react": "19.2.7", "@types/react-dom": "19.2.3"}
+}

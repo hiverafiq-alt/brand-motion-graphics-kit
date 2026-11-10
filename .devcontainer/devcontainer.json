@@ -1,0 +1,16 @@
+{
+  "name": "Brand Motion Graphics Kit",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "Brand Motion Graphics Kit",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postAttachCommand": "npm run studio",
+  "postCreateCommand": "npm ci"
+}
